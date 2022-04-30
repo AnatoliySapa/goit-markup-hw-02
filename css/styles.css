@@ -222,12 +222,15 @@ color: #212121;
     color: #212121;
 }
 
+img {
+    display: block;
+}
 .work-codding {
     width: 370px;
     height: 294px;
     left: 215px;
     top: 1061px;
-    background: url(close-up-image-programer-working-his-desk-office_1098-18707.jpg);
+   
     
 }
 .work-testing {
@@ -235,12 +238,12 @@ color: #212121;
     height: 294px;
     left: 615px;
     top: 1361px;
-    background: url(web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713.jpg);
+   
 }
 .work-selection {
 width: 370px;
 height: 294px;
 left: 1015px;
 top: 1661px;
-background: url(creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg);
+
 }
