@@ -1,135 +1,80 @@
+
+:root {
+    --main-font: 'Roboto',sans-serif;
+    --secondary-font: 'Raleway',sans-serif;
+    --primary-color: #212121;
+    --secondary-color: #757575;
+    --tertiary-color: #ffffff;
+    --quaternary-color: #000000;
+    --quinary-color: rgba(255, 255, 255, 0.6);
+    --page-bg-color: #2f303a;
+    --modal-btn-color: #188ce8;
+    --filter-btn-color: #f5f4fa;
+    --accent-color: #2196f3;
+}
+
 body {
     background-color: #E5E5E5;;
     font-family:Roboto;
 }
 
+ /* header */
 .header {
-    background-color:#FFFFFF
+    background-color:#FFFFFF;
+}
+.list {
+    list-style: none;
 }
 
-.web-leiba-header {
-    position: absolute;
-    width: 145px;
-    height: 31px;
-    left: 215px;
-    top: 24px;
-
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 700;
-font-size: 26px;
-line-height: 31px;
-letter-spacing: 0.03em;
-color: #2196F3;
+.link {
+    text-decoration: none;   
 }
 
-.studio-leiba-header {
-    position: absolute;
-    width: 145px;
-    height: 31px;
-    left: 268px;
-    top: 24px;
-    
-    font-family: 'Raleway';
-    font-style: normal;
+.logo-link {
+    font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
-    /* identical to box height */
-    
+    line-height: 1.19;
     letter-spacing: 0.03em;
-    color:black
 }
 
-.web-leiba-footer {
-    position: absolute;
-    width: 145px;
-    height: 31px;
-    left: 215px;
-    top: 2157px;
-    
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    /* identical to box height */
-    letter-spacing: 0.03em;
-    color: #2196F3;
+.logo-web {
+    color: var(--accent-color);
 }
 
-.studio-leiba-footer {
-    position: absolute;
-    width: 145px;
-    height: 31px;
-    left: 268px;
-    top: 2157px;
-    
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    /* identical to box height */
-    letter-spacing: 0.03em;
-    color:black
-
+.logo-studio-header {
+    color: var(--quaternary-color);
 }
 
-
-
-.link-studio {
-
-position: absolute;
-width: 49px;
-height: 16px;
-left: 453px;
-top: 32px;
-
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.02em;
-color: #212121;
-}
-.link-studio:hover {
-    color: #2196F3;
-}
-
-.link-portfolio {
-    position: absolute;
-    width: 77px;
-    height: 16px;
-    left: 552px;
-    top: 32px;
-    
-    font-family: 'Roboto';
-    font-style: normal;
+.menu-link,
+.contacts-header-link {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
 }
 
-.link-kontact{
-    position: absolute;
-    width: 68px;
-    height: 16px;
-    left: 679px;
-    top: 32px;
-    
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: #212121;
+.menu-link {
+    color: inherit;
 }
 
+.contacts-header-link {
+    color: var(--secondary-color);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--accent-color);
+}
+
+.menu-link.current {
+    color: var(--accent-color);
+}
+
+.contacts-header-link:hover,
+.contacts-header-link:focus {
+    color: var(--accent-color);
+}
+/* end header */
 
 
 .contact-link {
@@ -146,12 +91,13 @@ color: #212121;
     letter-spacing: 0.02em;
     color: #757575;
 }
-.contact-link:hover {
-    color: #2196F3;
+.contact-link:hover,
+.contact-link:focus {
+    color: #2196f3;
 }
 
 
-.tel-link{
+.tel-link {
     position: absolute;
     width: 122px;
     height: 16px;
@@ -166,27 +112,37 @@ color: #212121;
     color: #757575;
 }
 
-.lozung-zone {
-background: #2F303A;
+/* hero */
+.hero {
+    text-align: center;
+    background-color: var(--page-bg-color);
 }
 
-.lozung {
-    font-family: 'Roboto';
-    font-style: normal;
+.hero-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
-    text-align: center;
+    line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--tertiary-color);
 }
 
-.button {
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+.modal-btn {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: var(--tertiary-color);
 }
+
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: var(--modal-btn-color);
+}
+/* end hero */
 
 .detail,.punctuality,
 .planning,.technology {
@@ -212,38 +168,90 @@ color: #212121;
     color: #757575;
 }
 
-.basis {
-    font-family: 'Roboto';
-    font-style: normal;
+/* our job & our team */
+.job-title,
+.team-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
+    text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
 }
 
-img {
-    display: block;
+.team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
-.work-codding {
-    width: 370px;
-    height: 294px;
-    left: 215px;
-    top: 1061px;
-   
-    
-}
-.work-testing {
-    width: 370px;
-    height: 294px;
-    left: 615px;
-    top: 1361px;
-   
-}
-.work-selection {
-width: 370px;
-height: 294px;
-left: 1015px;
-top: 1661px;
 
+.team-profession {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
 }
+/* end our job & our team */
+
+
+/* footer */
+.footer {
+    background-color: var(--page-bg-color);
+}
+
+.logo-studio-footer {
+    color: var(--tertiary-color);
+}
+
+.contacts-footer-link {
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--quinary-color);
+}
+
+.contacts-footer-link.address {
+    color: var(--tertiary-color);
+}
+
+.contacts-footer-link:hover,
+.contacts-footer-link:focus {
+    color: var(--accent-color);
+}
+/* end footer */
+
+/* our projects */
+.filter-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    background-color: var(--filter-btn-color);
+    color: inherit;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    background-color: var(--accent-color);
+    color: var(--tertiary-color);
+}
+
+.project-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.project-desc {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+}
+/* end our projects */
