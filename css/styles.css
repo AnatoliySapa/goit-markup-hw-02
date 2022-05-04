@@ -48,6 +48,7 @@ body {
 
 .menu-link,
 .contacts-header-link {
+    font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -55,6 +56,7 @@ body {
 
 .menu-link {
     color: inherit;
+    font-size: 14px;
 }
 
 .contacts-header-link {
@@ -144,29 +146,28 @@ body {
 }
 /* end hero */
 
-.detail,.punctuality,
-.planning,.technology {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #212121;
+/* our features */
+.features-name {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
-
-.ideological-positions,.mission,
-.consultation,.significance {
+.features-desc {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--secondary-color);
 }
+
+/* end features */
 
 /* our job & our team */
 .job-title,
@@ -206,13 +207,17 @@ color: #212121;
 }
 
 .contacts-footer-link {
+    font-family: 'Roboto';
     font-style: normal;
-    line-height: 1.71;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
     letter-spacing: 0.03em;
     color: var(--quinary-color);
 }
 
 .contacts-footer-link.address {
+    
     color: var(--tertiary-color);
 }
 
