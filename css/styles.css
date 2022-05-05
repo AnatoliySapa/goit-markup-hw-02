@@ -38,11 +38,22 @@ body {
     letter-spacing: 0.03em;
 }
 
-.logo-web {
+.logo-web {font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+letter-spacing: 0.03em;
     color: var(--accent-color);
 }
 
 .logo-studio-header {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
     color: var(--quaternary-color);
 }
 
@@ -202,6 +213,12 @@ body {
 }
 
 .logo-studio-footer {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
     color: var(--tertiary-color);
 }
 
